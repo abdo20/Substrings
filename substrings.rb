@@ -3,7 +3,7 @@ the program take a string and a list of strings (dictionary)and retrun a hash of
 =end
 
 def main string, dictionary
-    string_words=string.split
+    string_words=string.downcase.split
     sub_hash=Hash.new
     dictionary.each do |sub|
         sub_count=0
